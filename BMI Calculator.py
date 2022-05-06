@@ -1,20 +1,19 @@
 #BMI Calculator
 
-import random
+name = input("Please enter your name here: ")
+height = input("Please enter your height in meters:")
+weight = input("Please enter your weight in kg: ")
 
-name = input("Enter your name: ")
-weight_kg = input("Enter weight in kilograms: ")
-height_m = input("Enter Height in meters: ")
+bmi = int(weight) / float(height) ** 2
 
+bmi_convert = int(bmi)
 
+print (bmi_convert)
 
-
-BMI = weight_kg / (height_m * height_m)
-print("BMI: ")
-print (BMI)
-if BMI < 25:
+if bmi_convert < 25:
 	print(name)
 	print("is not overweight")
+
 else:
 	print(name)
 	print("is overweight")

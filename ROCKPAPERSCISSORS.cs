@@ -23,6 +23,8 @@ namespace ROCKPAPERSCISSORS
 		{
 			string inputPlayer, inputCPU;
 			int randomInt;
+			int scorePlayer = 0;
+			int scoreCPU = 0;
 			
 			Console.Write("Choose between ROCK, PAPER and SCISSORS: ");
 			inputPlayer = Console.ReadLine();
@@ -30,6 +32,30 @@ namespace ROCKPAPERSCISSORS
 			Random rnd = new Random();
 			
 			randomInt = rnd.Next(1,4);
+			
+			switch (randomInt
+            {
+				case 1:
+					inputCPU = "ROCK";
+					Console.WriteLine("Computer chose ROCK");
+					if (inputPlayer == "ROCK")
+					{
+						Console.Writeline("DRAW!!\n\n");
+					}	
+					break;
+				case 2:	
+				default:
+					inputCPU = "PAPER"
+					break;
+				case 3:
+					inputCPU = "SCISSORS";
+					break;
+				default:
+					Console.WriteLine("Invalid entry!");
+					break;
+					
+			
+			)
 		}
 	}
 }

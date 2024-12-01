@@ -1,6 +1,6 @@
 using System;
 
-namespace SamuraiGame
+namespace KatanaKnight
 {
     public class Enemy
     {
